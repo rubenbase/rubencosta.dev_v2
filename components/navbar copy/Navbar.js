@@ -11,8 +11,6 @@ import {
   NavBtn,
 } from './navbar-elements'
 
-// import { Container } from './styles';
-
 function Navbar() {
   return (
     <Headroom>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 
 import { FaBars } from 'react-icons/fa'
 
@@ -35,6 +35,7 @@ export const NavContainer = styled.div`
   height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 export const Bars = styled(FaBars)`
