@@ -4,11 +4,15 @@ module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      transparent: 'transparent',
-      gray: colors.trueGray,
+    extend: {
+      screens: {
+        '3xl': '2350px',
+      },
     },
-    extend: {},
+    colors: {
+      dark: '#0e1012',
+      ...colors,
+    },
   },
   variants: {
     extend: {},

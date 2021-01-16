@@ -2,12 +2,15 @@ import React, { useRef, useState, useCallback } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
 import { motion, useViewportScroll, useTransform, useSpring } from 'framer-motion'
 
-import Navbar from 'components/header'
+// components
+import Home from 'components/home'
+import Header from 'components/header'
+import Summary from 'components/summary'
+
+// hooks
 import useIsomorphicLayoutEffect from 'hooks/useIsomorphicLayoutEffect'
 
-import styled from '@emotion/styled'
-
-export default function Home() {
+export default function App() {
   const scrollRef = useRef(null)
   const ghostRef = useRef(null)
   const [scrollRange, setScrollRange] = useState(0)
@@ -36,13 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="bg-gray-900 flex items-center h-14 fixed top-0 left-0 w-full border-b border-white">
-        <div className="px-6 flex items-center justify-center max-w-screen-2xl relative h-full w-screen my-0 mx-auto">
-          <a>
-            <span className="text-gray-100 font-bold">RC</span>
-          </a>
-        </div>
-      </header>
+      <Header />
       <main className="flex h-screen fixed top-0 left-0 pt-24 md:pt-14">
         <motion.section
           ref={scrollRef}
@@ -51,37 +48,14 @@ export default function Home() {
         >
           <div className="flex h-full flex-shrink-0">
             {/* home */}
-            <section className="bg-gray-900 text-gray-100 flex-shrink-0 flex relative w-screen h-full">
-              <div className="box-border h-full my-0 mx-auto max-w-screen-2xl px-6 relative w-screen">
-                <div className="absolute flex items-end bottom-0 mb-16 text-7xl">
-                  <div id="text">
-                    <h1 className="font-thin">
-                      <span className="font-light">Ruben Costa</span>
-                      <br />
-                      Cloud {'&'} Software Developer at Vodafone.
-                    </h1>
-
-                    <span className="m-1 text-blue-800 bg-pink-200 hover:bg-pink-300 rounded-full px-2 py-1 font-bold text-sm leading-loose cursor-pointer">
-                      #remote
-                    </span>
-                    <span className="m-1 text-red-800 bg-yellow-200 hover:bg-yellow-300 rounded-full px-2 py-1 font-bold text-sm leading-loose cursor-pointer">
-                      #worldwide
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <Home />
             {/* menu */}
-            <section className="bg-gray-900 text-gray-100 flex-shrink-0 flex relative w-screen h-full">
-              <div className="box-border h-full my-0 mx-auto max-w-screen-2xl px-6 relative w-screen">
-                <div className="absolute flex items-end bottom-0 mb-16 text-7xl">
-                  <div id="text">
-                    <h1 className="font-thin">
-                      <span className="font-light">Second page</span> mate
-                    </h1>
-                  </div>
-                </div>
-              </div>
+            <Summary />
+            {/* tercera */}
+            <section className="flex h-full flex-shrink-0">
+              <article className="flex flex-shrink-0 box-border">
+                <div className="border-l"></div>
+              </article>
             </section>
           </div>
         </motion.section>
