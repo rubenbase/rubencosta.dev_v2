@@ -53,7 +53,7 @@ function Summary() {
             </li>
           </ul>
         </nav>
-        <div>
+        {/* <div>
           <article>
             <img />
             <div>
@@ -65,7 +65,7 @@ function Summary() {
               <span></span>
             </div>
           </article>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-shrink-0 bg-dark h-full border-l relative w-1/3 2xl:w-1/3 3xl:w-2/3">
         <img

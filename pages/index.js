@@ -9,6 +9,7 @@ import Summary from 'components/summary'
 
 // hooks
 import useIsomorphicLayoutEffect from 'hooks/useIsomorphicLayoutEffect'
+import StickyTitle from 'components/sticky-title'
 
 export default function App() {
   const scrollRef = useRef(null)
@@ -52,9 +53,9 @@ export default function App() {
             {/* menu */}
             <Summary />
             {/* tercera */}
-            <section className="flex h-full flex-shrink-0">
-              <article className="flex flex-shrink-0 box-border">
-                <div className="border-l"></div>
+            <section className="flex h-full flex-shrink-0 box-border">
+              <article className="flex-shrink-0 relative flex">
+                <StickyTitle />
               </article>
             </section>
           </div>
