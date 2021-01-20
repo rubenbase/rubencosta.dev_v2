@@ -8,6 +8,12 @@ module.exports = {
       screens: {
         '3xl': '2350px',
       },
+      fontSize: {
+        '10xl': '10rem',
+      },
+      maxWidth: {
+        huge: '2515.93px',
+      },
     },
     colors: {
       dark: '#0e1012',

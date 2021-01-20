@@ -1,0 +1,25 @@
+.rotateText {
+  background-color: pink;
+  text-transform: uppercase;
+  width: 100vh;
+  font-size: 5.86957vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7.6087vh;
+  transform-origin: 0 100%;
+  transform: rotate(-90deg) translateY(100%) translateX(0) !important;
+  white-space: nowrap;
+}
+
+.list {
+  position: absolute;
+  padding: 0 10.86957vh 0 5.43478vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}

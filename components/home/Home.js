@@ -2,12 +2,14 @@ import React from 'react'
 
 function Home() {
   return (
-    <section className="bg-dark text-gray-100 flex-shrink-0 flex relative w-screen h-full">
+    <section className="bg-dark text-gray-100 flex-shrink-0 flex relative w-screen h-full max-w-huge">
       <div className="box-border h-full my-0 mx-auto max-w-screen-2xl px-6 relative w-screen">
         <div className="absolute flex items-end bottom-0 mb-16 text-7xl">
           <div id="text">
-            <h1 className="font-thin mr-6">
-              <span className="font-light">Ruben Costa</span>
+            <h1 className="font-thin mr-6 ">
+              <span className="font-light sm:text-6xl md:text-7xl 2xl:text-8xl xl:text-8xl lg:text-8xl">
+                Ruben Costa
+              </span>
               <br />
               Cloud {'&'} Software Developer at Vodafone.
             </h1>
