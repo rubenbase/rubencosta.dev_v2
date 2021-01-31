@@ -1,5 +1,4 @@
 .rotateText {
-  background-color: pink;
   text-transform: uppercase;
   width: 100vh;
   font-size: 5.86957vh;
@@ -22,4 +21,13 @@
   width: 100%;
   top: 0;
   height: 100%;
+}
+
+.transparent {
+  background-color: transparent;
+  color: white;
+}
+
+.pink {
+  background-color: pink;
 }
