@@ -1,0 +1,26 @@
+.ProjectsGrid {
+  height: calc(100vh - 55px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.CoverImage {
+  background-image: url(https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100);
+  background-color: #000;
+  background-size: cover;
+  opacity: 1;
+  background-position: 50%;
+  overflow: hidden;
+}
+
+.CoverTrigger {
+  transition: background-color 0.4s ease;
+  background: rgba(0, 0, 0, 0.25)
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
+    no-repeat;
+  background-size: 100% 100%;
+
+  will-change: background-color;
+  z-index: 2;
+  bottom: 0;
+}
