@@ -6,10 +6,11 @@ import { motion, useViewportScroll, useTransform, useSpring } from 'framer-motio
 import Home from 'components/home'
 import Header from 'components/header'
 import Summary from 'components/summary'
+import Process from 'components/process'
+import Projects from 'components/projects'
 
 // hooks
 import useIsomorphicLayoutEffect from 'hooks/useIsomorphicLayoutEffect'
-import Process from 'components/process'
 
 export default function App() {
   const scrollRef = useRef(null)
@@ -48,12 +49,10 @@ export default function App() {
           className="thumbnails-container"
         >
           <div className="flex h-full flex-shrink-0">
-            {/* home */}
             <Home />
-            {/* menu */}
             <Summary />
-            {/* tercera */}
             <Process />
+            <Projects />
           </div>
         </motion.section>
       </main>
